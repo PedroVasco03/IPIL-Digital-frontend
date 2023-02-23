@@ -5,7 +5,7 @@ import style from "../../css/Login.module.css"
 function PasswordBox(){
     const [senha, setSenha] = React.useState('');
     const [senhaErr, setSenhaErr] = React.useState(false);
-
+    
     const validate = () => {
         if(!validatePassword.test(senha)){
             setSenhaErr(true)
@@ -38,6 +38,7 @@ function PasswordBox(){
                         </p>}
         </>
     )
+    var erroS = new Senha(senhaErr);
 }
 
-export defa
+export default PasswordBox

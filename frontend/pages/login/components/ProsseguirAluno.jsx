@@ -8,22 +8,22 @@ import SignUpForm2 from "./SignUpForm2"
 function Prosseguir() {
     return(
         <>
-            <div className={style1.container}>
-                <div className={style1.forms_container}>
-                    <div className={style1.signin_signup}>
+            <div className={style2.container}>
+                <div className={style2.forms_container}>
+                    <div className={style2.signin_signup}>
                         <SignUpForm2/>
                     </div>
                 </div>
-                <div className="panels-container div">
-                    <div className="panel left-panel div">
-                        <div className="content div">
-                            <h3 className="h3">Algum problema ?</h3>
-                            <p className="p"> Caso insiras alguma informação errada saiba que 
+                <div className={style1.panels_container+" "+ style1.div}>
+                    <div className={style2.panel+" "+ style2.left_panel+" "+ style1.div}>
+                        <div className={style2.content+" "+ style1.div}>
+                            <h3 className={style2.h3}>Algum problema ?</h3>
+                            <p className={style2.p}> Caso insiras alguma informação errada saiba que 
                                 existe aqui a opção de regressares a página anterior, 
                                 clique em <strong>Voltar</strong> e atualize as suas informações.</p>
-                               <button className="btn transparent" id="sign-up-btn">Voltar</button>
+                               <button className={style2.btn+" "+ style2.transparent +" "+ style2.button} id="sign-up-btn">Voltar</button>
                         </div>
-                        <img src={imagem} className="image" alt=""/>
+                        <img src={imagem} className={style2.image} alt=""/>
                     </div>
                 </div>
             </div>

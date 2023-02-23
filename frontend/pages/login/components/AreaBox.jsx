@@ -9,7 +9,7 @@ function AreaBox(){
                 <i className={"bi-text-paragraph "+ style.i}></i>
                 <select
                     value={area} 
-                    className= {style.select}
+                    className= {style.select+" "+style.input}
                     onChange={({target}) => setArea (target.value)} 
                     id="area"
                 >

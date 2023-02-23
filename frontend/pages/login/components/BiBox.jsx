@@ -18,8 +18,8 @@ function BiBox(){
             <div className={style.input_field +" "+style.div}>
                 <i className={"bi-card-heading "+ style.i}></i>
                 <input 
-                    type="email" 
-                    name="mailnew" 
+                    type="text" 
+                    name="binew" 
                     className={style.input}
                     placeholder="Bilhete de identidade" 
                     maxLength={14}

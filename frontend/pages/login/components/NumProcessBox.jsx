@@ -1,4 +1,5 @@
 import React from "react";
+import style from "../../css/Login.module.css"
 
 function deteta (e){
     const Code = (e.key ? e.key : e.key);
@@ -20,12 +21,12 @@ function NumProcessBox(){
     const [numprocesso, setNumProcesso] = React.useState('');
     return(
         <>
-            <div className="input-field div">
-                <i className="bi-123"></i>
+            <div className={style.input_field+" "+ style.div}>
+                <i className={"bi-123 "+ style.i}></i>
                 <input 
                     type="number" 
                     name="processnumber" 
-                    className="input"
+                    className={style.input}
                     placeholder="Número de Processo" 
                     value={numprocesso}
                     required={true}

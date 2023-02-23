@@ -5,12 +5,13 @@ import CourseBox from "./CourseBox"
 import DegreBox from "./DegreBox"
 import ClassBox from "./ClassBox"
 import ButtonConfirm from "./ButtonConfirm";
+import style from "../../css/Prosseguir.module.css"
 
 function SignUpForm2(){
     return(
         <>
-            <form  className="sign-in-form form">
-                <h2 className="title h2">Cadastrar-se</h2>
+            <form  className={style.sign_in_form+" "+ style.form}>
+                <h2 className={style.title+" "+ style.h2}>Cadastrar-se</h2>
                 <NumProcessBox/>
                 <AreaBox/>
                 <CourseBox/>

@@ -12,26 +12,26 @@ import NumProcessBox from "./NumProcessBox";
 import style from "../../css/Login.module.css"
 
 function SignUpForm({user}){
-    
+
     if (user === "aluno" ) {
     return(
         <>
             <form className={style.sign_up_form+" "+ style.form}>
-                <h2 className="title h2">Cadastrar-se</h2>
+                <h2 className={style.title+" "+ style.h2}>Cadastrar-se</h2>
                 <NameBox/>
                 <EmailBox/>
                 <PhoneBox/>
                 <BiBox/>
                 <PasswordBox/>
                 <GenderField/>
-                <ButtonConfirm value="Prosseguir"/>
+                <Link href={'./ProsseguirAluno'}><ButtonConfirm value="Prosseguir" /></Link>    
             </form>
         </>
     )}else if(user === "coordenador"){
         return(
             <>
-                <form className="sign-up-form form">
-                    <h2 className="title h2">Cadastrar-se</h2>
+                <form className={style.sign_up_form+" "+ style.form}>
+                    <h2 className={style.title+" "+ style.h2}>Cadastrar-se</h2>
                     <NameBox/>
                     <EmailBox/>
                     <PhoneBox/>
@@ -44,8 +44,8 @@ function SignUpForm({user}){
     }else if(user === "encarregado"){
         return(
             <>
-                <form className="sign-up-form form">
-                    <h2 className="title">Cadastrar-se</h2>
+                <form className={style.sign_up_form+" "+ style.form}>
+                    <h2 className={style.title+" "+ style.h2}>Cadastrar-se</h2>
                     <NameBox/>
                     <EmailBox/>
                     <PhoneBox/>

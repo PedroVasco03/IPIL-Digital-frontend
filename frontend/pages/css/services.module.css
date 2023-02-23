@@ -1,0 +1,38 @@
+#serviceImage{
+    width: 40%;
+}
+
+.serviceItem{
+    width: 50%;
+    text-align: justify;
+}
+.img{
+    width: 400px;
+    height: 500px;
+}
+.img_sobre{
+    width: 400px;
+    height: 500px;
+    float: right;
+    margin-top: -50px;
+}
+@media screen and (max-width:870px){
+    .serviceItem{
+        text-align: center;
+    }
+    .containerServices{
+        flex-wrap: wrap;
+    }
+    .serviceItem h3{
+        font-size: 1.2rem;
+    }
+    .img{
+        width: 200px;
+        height: 300px;
+    }
+    .img_sobre{
+        width: 250px;
+        height: 300px;
+        
+    }
+}

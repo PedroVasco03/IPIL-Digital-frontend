@@ -9,17 +9,31 @@
     box-sizing: border-box;
 }
 .nav{
-    position: fixed;
+    position: absolute;
     top:0;
     bottom: 0;
     height: 100%;
     left: 0;
     background-color: #1b587c;
-    width: 7%;
+    width: 20%;
     overflow: hidden;
     transition: wigth 0.2s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
     text-align: center;
+}
+
+.btn{
+    background-color: #1b587c;
+    padding: 10px;
+    float: right;
+    margin:30px;
+    transition: all .5s;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #004065;
+    box-shadow: 3px 1px 0 2px rgba(0, 0, 0, 0.155);
 }
 
 .logo{
@@ -78,10 +92,6 @@
     font-weight: bold;
 }
 
-.nav:hover{
-    width: 20%;
-    transition: all 0.5s ease ;
-}
 .i:hover{
     scale: 1.2;
     transition: all .5s ease;
@@ -90,4 +100,30 @@
     position: absolute;
     bottom: 0;
     margin: 10px 0;
+}
+
+.home_img{
+    width: 500px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:1228px){
+    .nav{
+        width: 30%;
+    }
 }

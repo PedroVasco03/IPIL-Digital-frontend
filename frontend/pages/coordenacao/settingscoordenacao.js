@@ -12,6 +12,7 @@ import Modal from "./components/modal"
 import ModalComponent from "./components/modal"
 import Link from "next/link"
 import styleSide from'../css/sideBar.module.css'
+import styleGeral from '../css/logado.module.css'
 import logo from '../../public/images/logotipo.png'
 import AccordionComponent from "./components/accordion"
 import Head from "next/head"
@@ -22,45 +23,8 @@ function SettingsCoordenacao(){
                 <title>IPILDIGITAL</title>
                 <link rel="icon" type="png/ico" href="../public/images/chat.png"/>
             </Head>
-            {/* <NavBarCoordenacao/> */}
-            <div className={`d-flex flex-nowrap`}>
-                {/*  <div id={style.background} style={{width:'20%', height:'150vh'}} className={`${style.position} ${style.sticky}`}>
-                        <div className="d-flex flex-column p-1">
-                           <Link href={'/coordenacao/homecoordenacao'}>
-                                <div className={`${style.theme} d-flex`}>
-                                    <Image className="m-2" src={init} alt='inicio' width={30}/>
-                                    <p className="m-2" style={{fontWeight:'bold'}}>Inicio</p>
-                                </div>
-                           </Link>
-                           <Link href={'/coordenacao/chatcoordenacao'}>
-                                <div className={`${style.theme} d-flex`}>
-                                        <Image className="m-2" src={chat} alt='Chat' width={30}/>
-                                        <p className="m-2" style={{fontWeight:'bold'}}>Chat</p>
-                                </div>
-                           </Link>
-                            <Link href={'/coordenacao/teamcoordenacao'}>
-                                <div className={`${style.theme} d-flex`}>
-                                    <Image className="m-2" src={coord} alt='Coordenação' width={30}/>
-                                    <p className="m-2" style={{fontWeight:'bold'}}>Coordenação</p>
-                                </div>
-                                
-                            </Link>
-                            <Link href={'/coordenacao/settingscoordenacao'}>
-                                <div className={`${style.active} d-flex`}>
-                                    <Image className="m-2" src={set} alt='Definições' width={30}/>
-                                    <p className="m-2" style={{fontWeight:'bold'}}>Definições</p>
-                                </div>
-                            </Link>
-                            
-                            <Link href={'/'}>
-                                <div  className={`${style.theme} d-flex`}>
-                                    <Image className="m-2" src={exit} alt='Sair' width={30}/>
-                                    <p className="m-2" style={{fontWeight:'bold'}}>Sair</p>
-                                </div>
-                            </Link>
-                        </div>
-                </div> */}
-                <nav className={styleSide.nav}>
+            <div className={styleGeral.container}>
+                <nav className={styleSide.nav +" "+styleGeral.nav}>
                     <ul className={styleSide.ul}>
                     <li className={styleSide.li}><a href="/coordenacao/homecoordenacao" className={styleSide.a+" "+styleSide.logo}> 
                             <Image className={styleSide.i} src={logo} alt='logo'/>
@@ -88,19 +52,13 @@ function SettingsCoordenacao(){
                         </a></li>
                     </ul>
                 </nav>
-                <div style={{width:'20%',}}></div>
-                <div style={{width:'80%', height:'150vh', marginTop:'60px',}}>
                           
-                        <div style={{marginTop:'40px'}}>
+                        <div className={styleGeral.content}>
                             <div className="w-100 p-2">
                                 <AccordionComponent></AccordionComponent>
                             </div>
                         </div>    
-                         
-                </div>
             </div>
-
-
         </div>
     );
 }

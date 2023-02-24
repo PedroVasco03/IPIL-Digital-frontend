@@ -130,7 +130,7 @@ function HomeCoordenacao(){
                            <ModalNoSchedule show={modal2} closed={modalClose2}/>
                         </div>    
                         <div className="d-flex flex-column align-items-center w-100">
-                            <Image style={{width:'600px', height:'400px'}} src={empty} />
+                            <Image  className={styleSide.home_img} src={empty} />
                             <p>Nenhuma actividade.</p>
                             {datas.map((value, index)=>{
                                 console.log(value)

@@ -1,0 +1,93 @@
+.a{
+    text-decoration: none;
+    
+}
+.ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background-color: #1b587c;
+    width: 7%;
+    overflow: hidden;
+    transition: wigth 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px auto;
+}
+
+.logo .i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.logo .span{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.a{
+    position: relative;
+    color: white;
+    font-size: 14px;
+    display: table;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+}
+.i{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 14;
+    margin: 0 15px;
+}
+.nav_item{
+    position: relative;
+    top: 5px;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.logo .i:hover{
+    scale: 1;
+}
+.logo:hover{
+    background-color: #1b587c;
+}
+.a:hover{
+    background-color: #004065;
+    color: white;
+    font-weight: bold;
+}
+
+.nav:hover{
+    width: 20%;
+    transition: all 0.5s ease ;
+}
+.i:hover{
+    scale: 1.2;
+    transition: all .5s ease;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0;
+}

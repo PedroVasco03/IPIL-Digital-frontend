@@ -6,7 +6,7 @@ import attend from '../../public/images/attend.png'
 import style from '../css/services.module.css'
 const Services = ()=>{
     return(
-        <div>
+        <div data-aos="fade-up">
             <h2 style={{fontWeight:'bold'}} className='text-center'>Serviços</h2>
             <p className="text-center">O IPILDIGITAL tem como objectivo facilitar alguns serviços de forma simples e rápida.</p>
             <div className={'d-flex '+style.containerServices}>

@@ -16,6 +16,19 @@
     float: right;
     margin-top: -50px;
 }
+
+.container_sobre{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contentText{
+    width: 500px;
+    padding: 10px;
+}
+
 @media screen and (max-width:870px){
     .serviceItem{
         text-align: center;

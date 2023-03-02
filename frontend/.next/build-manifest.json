@@ -15,11 +15,6 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -30,20 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/aluno/homealuno": [
+    "/login/indexLogin": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/aluno/homealuno.js"
-    ],
-    "/coordenacao/homecoordenacao": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/coordenacao/homecoordenacao.js"
-    ],
-    "/secretaria/settingsecretaria": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/secretaria/settingsecretaria.js"
+      "static/chunks/pages/login/indexLogin.js"
     ]
   },
   "ampFirstPages": []

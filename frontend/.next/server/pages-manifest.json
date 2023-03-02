@@ -2,8 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/aluno/homealuno": "pages/aluno/homealuno.js",
-  "/secretaria/settingsecretaria": "pages/secretaria/settingsecretaria.js",
-  "/coordenacao/homecoordenacao": "pages/coordenacao/homecoordenacao.js",
-  "/": "pages/index.js"
+  "/login/indexLogin": "pages/login/indexLogin.js"
 }

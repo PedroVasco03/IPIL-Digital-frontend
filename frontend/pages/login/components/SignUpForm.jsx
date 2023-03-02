@@ -24,7 +24,7 @@ function SignUpForm({user}){
                 <BiBox/>
                 <PasswordBox/>
                 <GenderField/>
-                <Link href={'./ProsseguirAluno'}><ButtonConfirm value="Prosseguir" /></Link>    
+                <a href="../aluno/ProsseguirAluno"><ButtonConfirm value="Prosseguir" />  </a> 
             </form>
         </>
     )}else if(user === "coordenador"){

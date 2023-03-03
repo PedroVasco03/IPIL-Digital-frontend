@@ -42,14 +42,14 @@
 .div::after{
     width: 190px;
     height: 190px;
-    background-color: #ffffea;
+    background: linear-gradient(45deg,#0d4d71,#051a2d);
     text-transform: uppercase;
     position: absolute;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ff0052;
+    color: #ffffff;
     font-size: large;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -76,12 +76,10 @@
 
 .third::after{
     content: 'Estudante';
-    color: #00ff04;
 }
 
 .second::after{
     content: 'Encarregado';
-    color: #1e00ff;
 }
 
 .second::before{

@@ -11,7 +11,9 @@ const Services = ()=>{
             <p className="text-center">O IPILDIGITAL tem como objectivo facilitar alguns serviços de forma simples e rápida.</p>
             <div className={'d-flex '+style.containerServices}>
             
-                
+            <div id={style.serviceImage}>
+                    <Image src={service} className={style.img} alt='Serviços'/>
+                </div>
                
                 <div>
                     <div className="d-flex flex-row">
@@ -41,9 +43,7 @@ const Services = ()=>{
                     <p className={style.text}>O IPILDIGITAL tem como objectivo facilitar alguns serviços de forma simples e rápida.</p>
                 </div>
 
-                <div id={style.serviceImage}>
-                    <Image src={service} className={style.img} alt='Serviços'/>
-                </div>
+                
                 
                 <div className={style.container +" "+style.div}>
                  <div className={style.card +" "+style.div}>

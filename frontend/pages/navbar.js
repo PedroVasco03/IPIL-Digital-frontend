@@ -23,7 +23,7 @@ function NavBar(){
                     <NavItem><NavLink className={style.textBlank}>Home</NavLink></NavItem>
                     <NavItem><NavLink className={style.textBlank}>O que é o IPILDIGITAL</NavLink></NavItem>
                     <NavItem><NavLink className={style.textBlank}>Serviços</NavLink></NavItem>
-                    <NavItem><NavLink className={style.textBlank} href={'/login/indexLogin'}>Entrar</NavLink></NavItem>
+                    <NavItem><NavLink className={style.textBlank} href={'/login/aluno/LoginAluno'}>Entrar</NavLink></NavItem>
                 </div>
                 <NavbarToggler onClick={setOpenned} className={style.toogle}/>
                 <Offcanvas id={style.offcanvasNavbar} isOpen={open} direction={'end'} backdrop={false}>

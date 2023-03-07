@@ -30,7 +30,7 @@
 }
 
 .todos{
-    background: #333;
+    background: #fff;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -47,14 +47,14 @@
 
 .title{
     text-align: center;
-    color: #fff;
+    color: #0d4d71;
     font-weight: bold;
     margin: 20px auto;
 }
 
 .text{
     text-align: center;
-    color: #fff;
+    color: #000;
 }
 
 .container{
@@ -65,7 +65,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 80px;
-    min-height: 70vh;
+    min-height: 100vh;
 }
 
 .card{

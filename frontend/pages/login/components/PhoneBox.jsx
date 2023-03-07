@@ -2,7 +2,7 @@ import React from "react";
 import { validateTelefone } from "./utils/regex";
 import style from "../../css/Login.module.css"
 
-function deteta (e){
+function deteta (e){ 
     const Code = (e.charCode ? e.charCode : e.wich);
     if(Code < 40 || Code > 58){
         e.preventDefault()

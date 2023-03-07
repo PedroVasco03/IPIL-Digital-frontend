@@ -9,7 +9,7 @@ function EmailBox(){
         if(!validateEmail.test(email)){
             setEmailErr(true)
         }else{
-            setEmailErr(false)
+            setEmailErr(false) 
         }
     }
 

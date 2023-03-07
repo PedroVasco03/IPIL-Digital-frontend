@@ -8,7 +8,7 @@ function LoginAluno() {
    const [css, setCss] = React.useState(null)
    function ss(){
     
-    if(css===null)
+    if(css===null) 
     setCss('Login_sign_up_mode__AAm_P')
     else 
     setCss(null)
@@ -16,8 +16,7 @@ function LoginAluno() {
     }
        return(
         <>
-        
-            <div className={style.cont_pai+" " + style.div}>
+         <div className={style.cont_pai+" " + style.div}>
                 <div className={style.container+" " + style.div+" " + css}>
                     <div className={style.forms_container+" " + style.div}>
                         <div className={style.signin_signup +" "+ style.div}>
